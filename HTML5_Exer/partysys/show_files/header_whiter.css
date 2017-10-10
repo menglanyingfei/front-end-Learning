@@ -1,0 +1,20 @@
+
+/*红色导航栏*/
+.confont-nav{height:45px;width:100%;min-width:1200px;position: relative;z-index:100;background:#ec0909}
+.confont-nav .nav{width:1200px;margin:0 auto;}
+.nav li{ float:left; height:45px;}
+.nav li a{color:#666;padding-left:16px; padding-right:16px; font-size:16px;overflow:hidden;line-height:45px;height:45px;color:#fff;}
+.confont-nav .confont-con>ul>li>a{border-right:1px solid #fb9a9d;}
+.confont-nav .confont-con>ul>li:hover,.confont-nav .confont-con>ul>li.active{background:url(../images/bg_black_2.png)}
+.confont-nav .confont-con>ul>li.active>a,.confont-nav .confont-con>ul>li:hover>a{color:#fff;border-right-style:none}
+/*下拉菜单*/
+.down{position:relative;cursor:pointer;z-index:9;}
+.down .down-meau{}
+.down .down-meau{background:#efefef;position: absolute; left:0px;margin-top:0;clear:both;z-index:9;top:45px;}
+.down .down-meau>li,.down .down-meau>li>a{ color:#666; height:45px; line-height:45px; width:120px; padding: 0; display: block; text-align:center;float:none;font-size:14px;}
+.down .down-meau>li{border-bottom:1px solid #cfcfcf; margin:0 10px;}
+.down-meau>li>a:hover,.down-meau>li>a:hover i.iconfont{color:#ec0909;}
+.meau-no{ height:160px;}
+.down-meau{display:none}
+/*红色导航栏end*/
+

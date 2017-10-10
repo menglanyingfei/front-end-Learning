@@ -1,0 +1,214 @@
+HTML网页开发
+新手常犯的错误:
+1. 不加doctype, ---导致低版本IE解析效果不一致
+2. id为数字
+3. 文件编码与charset声明不一致
+
+盒子模型概念
+外边距 margin(自适应)
+	#container {
+		margin: 0 auto;
+	}
+	
+行内元素
+	span
+	
+块状元素
+	div
+	
+	内联与块状的转化
+	span {
+		display: block;
+		/* display: none; */
+	}
+	相邻的普通元素, 上下边距, 并非简单的相加,<br>
+	而是取其中较大的
+	
+本身宽度 border
+
+内边距 padding
+
+CSS
+段落缩进
+text-indent
+text-align
+text-decoration
+letter-spacing
+
+字体
+color: blue;
+font-style: italic;
+font-weight: bold;
+line-height: 23px;
+font-family: "SimHei";
+
+背景
+background-color: blue;
+background-image: url(small.jpg);
+background-repeat: no-repeat;
+
+精确控制背景图片位置
+background-position: -150px -530px;
+
+CSS选择器
+id选择器
+类--
+标签选择器
+派生选择器
+优先级
+
+CSS4种引入方式
+1. 在style标签里直接写
+2. 引入css文件
+3. 在html标签里加入style属性和值
+4. 在一个css文件里还能import其它css文件
+
+css初始化
+现有代码
+
+html标签
+	无语义标签
+	有语义标签, <h1>有利于SEO收录
+	
+h标签与p标签
+标题
+h1与h6
+p表示段落
+
+img标签 特殊的内联替换元素, 替换元素是能设置宽高的
+<img src="haha.jpg" alt="哈哈" title="鼠标放上去 它就显示" />
+
+有序列表与无序列表
+ol ul
+
+表格
+table {
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid blue;
+}
+<table>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+
+超链接标签
+本地:
+<a href="index.html" target="_blank">index</a>
+远程:
+<a href="http://www.baidu.com" title="鼠标放上来">百度</a>
+
+锚点
+<a name="p1"></a>
+适用于大页面
+
+css伪类(针对a标签)
+注意顺序!
+a:link {
+	color: gray;
+}
+a:visited {
+	color: purple;
+}
+a:hover {
+	color: orange;
+}
+a:active {
+	color: black;
+}
+
+字符实体
+&gt; &lt;
+> <
+一般的格式: &amp; + 实体名 + ;
+&quot; &yen; &copy;
+
+总体实现:
+公司网站开发之1.首页布局
+公司网站开发之2.导航
+初始化
+公司网站开发之3.main区域(1)
+公司网站开发之4.main区域(2)
+公司网站开发之5.footer区域
+
+色彩的表示
+综上, 本质是组合3原色
+1. 用16进制组合[0-255]-->[00, FF],
+<span style="color:#234567">#234567</span>
+2. 用10进制来组合, 如
+<span style="color:rgb(240, 23, 45)">rgb(240, 23, 45)</span>
+3. html提供常用颜色的名称, 如orange, pink, purple, red
+
+尺寸的表示
+px, %, em
+em是相对大小, 1em就是父元素的font-size
+同时, 块状子元素要是不说宽度, 默认占满父元素的宽度
+
+用css画一个圆
+<style>
+#test {
+	width: 300px;
+	height: 300px;
+	border: 1px solid red;
+	border-radius: 150px;
+}
+</style>
+<div id="test">css画一个圆</div>
+
+相对定位与绝对定位
+相对定位: 元素在其正常的位置, 偏移某些像素
+绝对定位:
+相对于父元素的top, left, right, bottom来定位
+
+overflow溢出处理
+在父元素中加入
+div {
+	overflow: scroll;
+}
+
+表单
+<p>
+	上传头像: <input type="file" name="pic" />
+</p>
+
+框架集
+无body标签
+<frameset rows="200px,*">
+	<frame src="16-css-text.html"></frame>
+	<frame src="09-padding.html"></frame>
+</frameset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+	
+	
+	

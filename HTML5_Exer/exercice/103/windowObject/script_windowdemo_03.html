@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重定向</title>
+		<script language="JavaScript">
+			function fun(thisurl) {
+				window.location = thisurl;
+			}
+		</script>
+	</head>
+	<body>
+		网站：	<select name="url" onchange="fun(this.value)">
+					<option value="#">==请选择要浏览的站点==</option>
+					<option value="http://www.wtu.edu.cn">武纺</option>
+					<option value="script_eventform_03.html">form_03</option>
+				</select>
+	</body>
+</html>

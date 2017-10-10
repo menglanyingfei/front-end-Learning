@@ -1,0 +1,47 @@
+* CSS=层叠样式表
+* HTML表达结构, CSS表达样式
+* 样式和内容/结构是分离的
+
+正确引用外部样式表的方法
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+背景样式
+
+段落
+
+字体
+
+效果
+
+列表
+
+表格的样式
+
+框模型(盒子模型)
+
+CSS定位
+块状元素
+<div>
+<p>
+<span>
+
+普通流
+浮动
+绝对定位
+
+样式选择器
+a:visited
+a:link
+a:hover
+a:active
+
+
+
+
+
+
+
+
+
+
+

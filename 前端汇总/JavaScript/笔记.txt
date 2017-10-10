@@ -1,0 +1,123 @@
+* JavaScript
+	* 是一种可以在浏览器中运行的脚本语言
+	* 主要用来实现在浏览器端的动作
+		* 用户交互
+		* 数据处理
+
+		Java需要编译
+		
+		JavaScript是解释性语言
+		
+* 2.1 变量
+	variable	
+	计算
+
+判断
+	两个函数: document.wtite
+					alert
+建议:
+	在if和else后面永远放一对{}, 哪怕后面只有一句语句
+	
+优先级:
+* 所有的逻辑运算符都低于关系运算符
+* ! > && > ||
+条件运算符
+
+循环
+无限循环的写法
+while (true) {}
+do {} while (true);
+for (;;) {}
+
+break
+continue
+
+
+函数
+function print(msg) {
+	document.write(msg);
+}
+
+function max(a, b) {
+	return a>b?a:b;
+}
+
+函数变量
+var f = new Function("x", "y", "return x*y");
+
+变量空间
+整个网页
+函数内部
+
+数组(动态)
+var marks = new Array();
+marks[0] = 89;
+marks[1] = 78;
+marks[2] = 90;
+
+var colors = ["red", "blue", "green"];
+alert(colors[0]);
+
+colors[3] = "brown";
+
+可扩展性
+
+转换数组为字符串
+
+堆栈操作
+
+排序操作
+
+数组操作
+
+对象
+var o = new Object();
+var ciclr = {x:0, y:0, radius:2};
+
+遍历所有属性
+for (var x in o) ...
+
+构造函数
+function Rect(w, h) {
+	this.width = w;
+	this.height = h;
+	this.area = function() {
+		return this.width * this.height;
+	};
+}
+
+var r = new Rect(5, 10);
+alert(r.area());
+
+
+全局对象
+* 浏览器的全局变量是window
+* 所有全局的变量实际上是window的成员
+var answer = 12;
+alert(window.answer);
+
+location对象
+* window.location代表当前文档的URL
+	* alert(location);
+	* location = "http://study.163.com";
+	
+
+for (var x in document) {
+	document.write(x + "<br/>");
+}
+
+常见的事件:
+onsubmit
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<ul id="ul">
+				<li>Java</li>
+				<li id="C">C++</li>
+				<li>PHP</li>
+			</ul>	
+			<ul>
+				<li id="py">Python</li>
+			</ul>
+			<button onclick="run()">
+				我是按钮
+			</button>
+	</body>
+		<script type="text/javascript">
+		//* insertBefore(new,old)		在指定节点之前添加子节点
+		function run() {
+			var ul = document.getElementById("ul");
+			var C = document.getElementById("C");
+			var py = document.getElementById("py");
+			
+			ul.insertBefore(py, C);
+			
+			alert("Test is successful！");
+		}	
+		</script>
+</html>

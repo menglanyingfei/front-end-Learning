@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的页面</title>
+	<meta charset="utf-8">
+	<!-- 元素, 类选择器 -->
+	<style>
+		p,th,td  {
+			border: 1px solid blue
+		}
+		p em {background-color: red}
+		*.important {
+			color: green
+		}
+		*#warning {
+			color: blue
+		}
+		*[title] {
+			color: red
+		}
+		a:visited {
+			color:#000000
+		}
+	</style>
+</head>
+
+<body style="background-color: gray">
+<p style="text-indent: 2em">
+<!-- 当前字体的倍数 -->
+第<em>一</em>段落
+</p>
+<p style="color: red; font-style: obique; margin: 10px 50px 50px 10px">
+第二段落
+</p>
+<ul style="list-style-type: circle">
+	<li>语文</li>
+	<li>数学</li>
+	<li>英语</li>
+</ul>
+<hr>
+
+<table style="border: 1px solid blue">
+<caption>成绩</caption>
+<tr>
+	<th>语文</th>
+	<th>数学</th>
+	<th>英语</th>
+</tr>
+<tr>
+	<td>90</td>
+	<td>90</td>
+	<td>90</td>
+</tr>
+</table>
+<hr>
+<p class="important warning">
+class
+</p>
+<hr>
+<p id="warning">
+id
+</p>
+<hr>
+<div title="Hello">
+这是一个div.
+</div>
+<a href="http://www.baidu.com">百度</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

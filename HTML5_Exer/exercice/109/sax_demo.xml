@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<addresslist>
+    <linkman id="lxy">
+        <name>李星阳</name>
+        <email>lixingyang511@163.com</email>     
+    </linkman>
+    <linkman id="XML">
+        <name>Java</name>
+        <email>lixingyang511@gmail.com</email>
+    </linkman>
+</addresslist>

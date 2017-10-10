@@ -1,0 +1,103 @@
+W3C
+各大浏览器厂商
+
+课时3:
+准备的IDE(软件), notepad++
+文本编辑器(简单)
+浏览器
+
+课时4:HTML文件框架
+我的页面
+我的第一个HTML页面
+
+课时6:段落
+<p></p>(paragraph)
+<br>(break)
+h1-h6
+
+英文:
+<wbr></wbr>
+<hgroup></hgroup>
+
+段落格式
+特殊格式
+<address></address>
+<blockquote></blockquote> 段落缩进
+
+<q></q>
+
+<code>
+<pre>
+</pre>
+</code>
+
+
+属性:
+<hr width=50%> 华丽的分割线
+
+listitem
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ol>
+</ol>
+<dl>
+	<dt></dt>
+	<dd></dd>
+</dl>
+
+图片:
+<img />
+<iframe src="http://news.163.com"></iframe>
+
+链接:
+<a href="http://163.com">网易</a>
+<a href="you.html#here" target="_blank">here</a>
+
+map: 地图, 映射
+
+表格:
+<p>
+<table>
+	<caption></caption>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td>IOS5</td>
+		<td>yes</td>
+	</tr>
+</table>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

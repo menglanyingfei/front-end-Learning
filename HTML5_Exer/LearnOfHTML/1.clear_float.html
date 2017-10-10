@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>清除浮动</title>
+		<style>
+		    #lside{
+		        width: 20px;
+		        height: 300px;
+		        background: green;
+		        float: left;
+		    }
+		    #rside{
+		        width: 20px;
+		        height: 200px;
+		        background: blue;
+		        float: right;
+		    }
+		    #comm{
+		        width: 300px;
+		        background: #EEE;
+		        clear: right;
+		    }	    
+    	</style>
+	</head>
+	
+	<body>	
+        <div id="lside">我是左</div>
+        <div id="rside">我是右</div>
+        <div id="comm">我是普通div</div>
+	</body>
+</html>
+

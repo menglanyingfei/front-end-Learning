@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定义子窗口，返回选择内容</title>
+		<script language="JavaScript">
+			function returnValue() {
+				var city = document.myform.city.value;
+				var doc = window.opener.document;
+				doc.parentform.result.value = city;
+				window.close();
+			}
+		</script>	
+	</head>
+	<body>
+		<form name="myform">
+			选择：	<select name="city">
+						<option value="北京">北京</option>
+						<option value="武汉">武汉</option>
+						<option value="杭州">杭州</option>
+					</select>
+			<input type="button" value="返回" onclick="returnValue()"/>
+		</form>
+	</body>
+</html>

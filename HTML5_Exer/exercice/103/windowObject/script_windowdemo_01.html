@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>打开新的页面</title>
+		<script language="JavaScript">
+			function fun(thisurl) {
+				window.open(thisurl, "页面标题", "width=470, height=150, scrollbars=yes, resizable=no");
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" method="post" name="myform">
+			网址：	<select name="url" onchange="fun(this.value)">
+						<option value="script_eventform_01.html">event-01</option>
+						<option value="script_eventform_02.html">event-02</option>
+						<option value="script_eventform_03.html">event-03</option>
+					</select>
+		</form>
+	</body>
+</html>

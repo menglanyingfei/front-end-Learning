@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用动态初始化的方式声明数组</title>
+		<script language="JavaScript">
+			function fun() {
+				var arr = new Array(3);
+				for (i = 0; i < arr.length; i++) {
+					arr[i] = i;
+				}
+				var str = "数组的内容：";
+				for (i = 0; i < arr.length; i++) {
+					str += arr[i] + "、";
+				}
+				return str;
+			}
+			alert(fun());
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

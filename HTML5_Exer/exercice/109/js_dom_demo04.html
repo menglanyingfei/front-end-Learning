@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动态地增加和删除表格</title>
+		<script language="JavaScript">
+			var count = 3;
+			function addrow() {
+				var table = document.getElementById("mytable");
+				var tr = table.insertRow();
+				var td1 = tr.insertCell();
+				var td2 = tr.insertCell();
+				var td3 = tr.insertCell();
+				td1.innerHTML = "<input type='button' value='-' onclick='deleterow(this)'/>";
+				td2.innerHTML = "Cpp-" + count;
+				td3.innerHTML = "JavaScript-" + count;				
+				count++;
+			}
+			function deleterow(btn) {
+				var tr = btn.parentNode.parentNode;
+				var table = document.getElementById("mytable");
+				table.deleteRow(tr.rowIndex);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="+" onclick="addrow()"/>
+		<table id="mytable" border="1">		
+			<tr>
+				<td>JavaScript-2</td>
+				<td>Cpp-2</td>
+				<td><input type="button" value="-" onclick="deleterow(this)"/></td>
+			</tr>
+			<tr>
+				<td>JavaScript-1</td>
+				<td>Cpp-1</td>
+				<td><input type="button" value="-" onclick="deleterow(this)"/></td>
+			</tr>
+		</table>
+	</body>
+</html>
