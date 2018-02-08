@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>并且选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h1 class="person">三国人物</h1>
+    <h2>三国人物</h2>
+    <h3>三国人物</h3>
+
+    <ul>
+        <li class="person">刘备0号</li>
+        <li class="person" id="yun">刘备1</li>
+        <li>刘备2</li>
+        <li>刘备3</li>
+        <li>刘备4</li>
+        <li id="liubei">刘备5</li>
+        <li>刘备6</li>
+        <li>刘备7</li>
+    </ul>
+    <input type="button" value="点击" onclick="f1()">
+<script type="text/javascript">
+    function f1() {
+        // 通过类选择器选择 刘备0号和1号
+        $("li#yun.person").css("color", "red"); // 求交集
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

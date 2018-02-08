@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入门程序</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div>第一个jquery程序</div>
+
+<input type="button" value="点击" onclick="f1()"/>
+
+<script type="text/javascript">
+    function f1() {
+//            document.getElementsByTagName("div")[0].style = "color:red";
+        jQuery("div").css("color", "red");
+    }
+</script>
+</body>
+</html>

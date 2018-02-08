@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容包含选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>我是<p>中国</p>人</div>
+    <div>哈哈<span id="person">你是外国人</span></div>
+    <input type="button" value="点击" onclick="f1()">
+<script type="text/javascript">
+    function f1() {
+        // 选择文本内容包含中国的div标签
+//        $("div:contains(中国)").css("color", "red");
+
+        // 选择 哈哈你是外国人
+//        $("div:has(#person)").css("color", "red");
+
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

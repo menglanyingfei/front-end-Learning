@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <span>狗娃</span>
+        <p><span>铁蛋</span></p>
+    </div>
+    <p>haha</p>
+    <span>Java</span>
+    <div>狗剩</div>
+    <span>翠花</span>
+    <span>PHP</span>
+<br>
+<input type="button" value="点击" onclick="f1()"/>
+
+<script type="text/javascript">
+    function f1() {
+        // $(s1 s2): 选择s1下所有的s2元素, 忽略层级关系
+        $("div span").css("color", "red"); // 狗娃 铁蛋
+        // $(s1>s2): 选择s1下所有的s2元素, 不忽略层级关系
+        $("div>span").css("color", "red"); // 狗娃
+        // $(s1+s2):选择s1后第一个s2兄弟节点, 如果第一个不是span, 则不选中
+//        $("div + span").css("color", "red"); // 翠花
+        // $("s1 ~ s2") 选择s1后面所有的s2兄弟节点
+//        $("div ~ span").css("color", "green"); // Java 翠花 PHP
+
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<input type="checkbox" name="hobby" value="Java">Java
+<input type="checkbox" name="hobby" value="PHP">PHP
+<input type="checkbox" name="hobby" value="C">C
+<input type="checkbox" name="hobby" value="C++">C++
+<br>
+<input type="button" value="点击" onclick="f1()">
+<script type="text/javascript">
+    function f1() {
+//        alert($("input:checked"));
+
+        for (var i = 0; i < $("input:checked").length; i++) {
+            // 输出每一个被选中的框的value值
+            alert($("input:checked:eq(" + i + ")").val());
+        }
+
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text" id="id1" class="class1" name="user" value="Java">
+    <input type="text" id="id2" class="class2" name="pass" value="123">
+    <input type="text" id="id3" class="class3" name="email" value="1@163.com">
+    <input type="text" id="id4" class="class4" name="phone" value="15011111777">
+    <input type="text" id="id5" class="class1" name="username" value="Java"/>
+
+    <input type="button" value="点击" onclick="f1()">
+<script type="text/javascript">
+    function f1() {
+        // $("[属性名]")  查询所有包含该属性名的元素
+//        $("[type]").css("color", "red");
+
+        // $("[属性名=属性值]")  查询某个属性名=属性值的元素
+//        $("[name=user]").css("background-color", "yellow");
+
+        // $("[属性名^=value]") 属性值以value开头
+        // $("[属性名$=value]") 属性值以value结尾
+//        $("[name^=use]").css("width", "500px");
+//        $("[value$=va]").css("font-size", "2em");
+
+        // $("[属性名!=value]") 属性名不等于value值
+        // 如果没有该属性名, 那么默认也会选中
+//        $("[class!=class2]").css("background-color", "red");
+
+//        $("[class][class!=class2]").css("background-color", "red");
+
+        // $("[属性名*=value]") 属性值包含value
+        $("[value*=5]").css("background-color", "red")
+
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

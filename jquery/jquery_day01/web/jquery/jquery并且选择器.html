@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>并且选择器的使用</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h1>三国人物</h1>
+    <h2>三国人物</h2>
+    <h3>三国人物</h3>
+    <h4>三国人物</h4>
+    <h5>三国人物</h5>
+    <h6>三国人物</h6>
+
+    <ul>
+        <li>刘备0号</li>
+        <li>刘备1</li>
+        <li>刘备2</li>
+        <li>刘备3</li>
+        <li>刘备4</li>
+        <li id="liubei">刘备5</li>
+        <li>刘备6</li>
+        <li>刘备7</li>
+    </ul>
+    <input type="button" value="点击" onclick="f1()">
+<script type="text/javascript">
+    function f1() {
+        //选中刘备1, 第一个元素
+//        $("li:first").css("color", "red");
+        // 选中最后一个: last
+//        $("li:last").css("color", "red");
+        // eq(索引值) 注意: 索引值从0开始
+//        $("li:eq(4), li:eq(5)").css("color", "blue");
+
+        // gt(索引):大于, lt小于, 使用的时候
+        // 执行完第一个以后, 索引会归零
+//        $("li:gt(1):lt(5)").css("color", 'pink');
+        //odd even: 指的是索引值
+//        $("li:odd").css("font-size", "2em");
+
+        // not(selector) 选择不包含满足selector的元素
+//        $("li:not(#liubei)").css("background-color", "red");
+
+        //header: 选择所有的标题标签
+        $(":header").css("background-color", "red");
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
