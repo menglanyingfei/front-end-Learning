@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用each方法遍历jquery对象</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js">
+    </script>
+</head>
+<body>
+    <input type="checkbox" name="lang" value="Java">Java
+    <input type="checkbox" name="lang" value="PHP">PHP
+    <input type="checkbox" name="lang" value="C">C
+
+    <br>
+    <input type="button" value="获取" onclick="f1()">
+
+
+</body>
+<script type="text/javascript">
+    function f1() {
+        // each方法遍历jquery对象
+        // 获取jquery对象, 名字一般以$开头
+        var $obj = $("[name=lang]:checked");
+//        alert($obj.length);
+
+        $.each($obj, function (k, v) {
+            // k: jquery对象中的索引, v: jquery对象中的被封装的dom对象
+//           alert(k + "-- " + v);
+//           alert(v.value);
+            // 将dom对象转成jquery对象
+//            alert($(v).val());
+            // this关键字代表的是每一个遍历出来的dom对象
+            alert(this);
+            alert(this.value + "--" + $(this).val());
+        });
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

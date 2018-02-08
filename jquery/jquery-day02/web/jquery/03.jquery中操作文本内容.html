@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作文本内容</title>
+    <script type="text/javascript"
+            src="../js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+        .class1 {
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+        }
+        .class2 {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+    <div>我们<span>好好学习</span>加油</div>
+    <div id="div_id"></div>
+
+    <input type="button" value="获取" onclick="f1()">
+    <input type="button" value="设置" onclick="f2()">
+
+    <script type="text/javascript">
+        function f1() {
+            // jquery对象获取文本内容, 在获取文本内容的时候,
+            // html()不能够正确的识别html标签, 它会将标签当成是普通的文本输出
+            // 而text()能够正确的去解析html标签
+            alert($("div").html());
+            alert($("div").text());
+        }
+        function f2() {
+            // 设置内容
+//            $("#div_id").html("<a href='http://www.baidu.com'>百度</a>");
+            $("#div_id").text("<a href='http://www.baidu.com'>百度</a>");
+        }
+        
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

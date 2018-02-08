@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13.jquery对事件处理</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js">
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: groove;
+        }
+    </style>
+</head>
+<body>
+<div>jquery对事件处理</div>
+<button id="btn" onclick="f1()">触发事件</button>
+<script type="text/javascript">
+    // 鼠标移动上去
+    $("div").mouseover(
+        function () {
+            // this表示就是$("div")里面封装的dom对象
+            $(this).css("background-color", "blue");
+        }
+    );
+
+    $("div").mouseover(
+        function () {
+            // this表示就是$("div")里面封装的dom对象
+            $(this).css("font-size", "20px");
+        }
+    );
+    // 鼠标移动出去
+    $("div").mouseout(
+        function () {
+            $(this).css("font-size", "10px");
+            $(this).css("background-color", "red");
+        }
+    );
+
+    function f1() {
+        $("div").mouseout();
+    }
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

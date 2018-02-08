@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom对象和jquery对象相互调用对方的成员</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js">
+    </script>
+</head>
+<body>
+    <input type="text" id="input_id" name="username" value="Java">
+    <br>
+    <input type="button" value="获取" onclick="f1()">
+
+
+</body>
+<script type="text/javascript">
+    function f1() {
+        // 获取dom对象
+//        document.getElementsByTagName("input")[0].style = "background-color:red";
+//        $("#input_id").css("background-color", "yellow");
+
+        // 将jquery对象转换成dom对象
+//        $("#input_id")[0].style = "background-color:red";
+
+        alert($("input").length);
+        // 如何将dom对象转换成jquery对象
+        var dom_object = document.getElementsByTagName("input")[0];
+        $(dom_object).css("background-color", "yellow");
+
+    }
+</script>
+</html>

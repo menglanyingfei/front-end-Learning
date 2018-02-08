@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作文本内容</title>
+    <script type="text/javascript"
+            src="../js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" name="hobby" class="class1" value="Java">Java
+    <input type="checkbox" name="hobby" class="class1" value="C">C
+    <input type="checkbox" name="hobby" class="class1" value="PHP">PHP
+    <input type="checkbox" name="hobby" class="class1" value="JavaEE">JavaEE
+    <br>
+    <input type="radio" name="sex" class="sex_class" value="男">男
+    <input type="radio" name="sex" class="sex_class" value="女">女
+    <br>
+    <select>
+        <option value="北京">北京</option>
+        <option value="上海">上海</option>
+        <option value="杭州">杭州</option>
+    </select>
+    <br>
+    <input type="button" value="获取" onclick="f1()">
+    <input type="button" value="设置" onclick="f2()">
+
+
+    <script type="text/javascript">
+        function f1() {
+            for(var i = 0; i < $(".class1:checked").length; i++) {
+                alert($(".class1:checked:eq(" + i + ")").val());
+            }
+        }
+
+        function f2() {
+            // 给多选框赋值value属性, jquery对象是一个数组, 就相当于给数组中的元素赋值
+//            $(".class1").val(["Java", "JavaEE"]);
+            // 给单选框赋值, 所赋的值必须等于单选框的value属性值
+//            $(".sex_class").val(["男"]);
+
+            // 给下拉框赋值
+            // 错误的做法, 注意在选择元素的时候, 应该
+            // 选择select标签, 而不是子级标签option
+//            $("option").val(["杭州"]);
+            $("select").val(["杭州"]);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

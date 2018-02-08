@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作属性</title>
+    <script type="text/javascript"
+            src="../js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+        .userClass {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"
+    name="username" id="user_id" class="user_class" value="java" address="wuhan">
+    <input type="button" value="获取" onclick="f1()">
+    <input type="button" value="设置" onclick="f2()">
+    <input type="button" value="删除" onclick="f3()">
+
+
+    <script type="text/javascript">
+        function f1() {
+            // 通过id选择器获取文本框的对象, 这是一个jquery对象
+//        alert(document.getElementById("user_id").value);
+            // 这是错误的做法
+//        alert($("#user_id").value);
+            /*
+            alert($("#user_id").attr("type"));
+            alert($("#user_id").attr("name"));
+            alert($("#user_id").attr("id"));
+            alert($("#user_id").attr("value"));
+            alert($("#user_id").attr("address"));
+            */
+
+
+        }
+        function f2() {
+            // 设置属性值, jquery对象不能修改type属性(存在浏览器的问题, Chrome可以!)
+//            $("#user_id").attr("type", "radio");
+            $("#user_id").attr("name", "radio");
+            $("#user_id").attr("id", "user_id");
+            $("#user_id").attr("class", "userClass");
+            $("#user_id").attr("value", "C++");
+            $("#user_id").attr("address", "杭州");
+
+            // 使用dom对象对type属性进行修改
+//            document.getElementById("user_id").type = "radio";
+
+        }
+        
+        function f3() {
+            // jquery对象不能删除type属性
+//            $("#user_id").removeAttr("type");
+            $("#user_id").removeAttr("class");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

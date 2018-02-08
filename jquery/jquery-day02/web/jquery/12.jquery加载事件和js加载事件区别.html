@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12.jquery加载事件和js加载事件区别</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js">
+    </script>
+</head>
+<body>
+<img alt="" src="/jquery-day02/VerifyCodeServlet"/>
+<h1>jquery和JS中加载事件区别</h1>
+<!-- 本地加载html文件, 才可以出现图片 -->
+<!--<img alt="" src="file:///E:\temp\1.jpg">-->
+<img alt="" src="../img/1.jpg"/>
+<script type="text/javascript">
+//    window.onload = function () {
+//        alert("js中加载事件1");
+//    };
+//    window.onload = function () {
+//        alert("js中加载事件2");
+//    };
+//    window.onload = function () {
+//        alert("js中加载事件3");
+//    };
+
+//    $(document).ready(function () {
+//        alert(11);
+//    });
+//    $().ready(function () {
+//        alert(22);
+//    });
+//    $(function () {
+//        alert(33);
+//    });
+
+    window.onload = function () {
+        alert("js中加载图片");
+    };
+
+    $(function () {
+        alert("jquery中加载图片");
+    });
+
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

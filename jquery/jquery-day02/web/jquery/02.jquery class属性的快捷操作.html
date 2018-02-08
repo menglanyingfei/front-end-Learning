@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class属性的快捷操作</title>
+    <script type="text/javascript"
+            src="../js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+        .class1 {
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+        }
+        .class2 {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+    <div>我们<span>好好学习</span>加油</div>
+
+    <input type="button" value="删除" onclick="f1()">
+    <input type="button" value="增加" onclick="f2()">
+    <input type="button" value="改变" onclick="f3()">
+
+    <script type="text/javascript">
+        function f1() {
+//            $("div").removeClass(); // 删除所有的class属性值
+            // 单独删除一个class属性
+            $("div").removeClass("class2");
+        }
+        function f2() {
+            // 如果一次要添加多个class属性值
+            // 那么属性值之间应该采用空格隔开
+            $("div").addClass("class1 class2");
+        }
+        
+        function f3() {
+            // 如果有class2属性, 就删除class2, 如果没有, 就添加
+            $("div").toggleClass("class2");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

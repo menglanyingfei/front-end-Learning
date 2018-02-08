@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用each方法遍历数组</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js">
+    </script>
+</head>
+<body>
+    <input type="button" value="获取" onclick="f1()">
+
+
+</body>
+<script type="text/javascript">
+    function f1() {
+        var arr = ["java", "php", "C"];
+//        for (var i = 0; i < arr.length; i++) {
+//            alert(arr[i]);
+//        }
+
+        // k: 数组中的索引, v: 与该索引对应的数组中的元素
+        $.each(arr, function (k, v) {
+            alert(k+" -- " + v);
+        })
+    }
+</script>
+</html>

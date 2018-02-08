@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遍历自定义对象</title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+
+</head>
+<body>
+    <input type="button" value="获取" onclick="f1()">
+</body>
+<script type="text/javascript">
+    function f1() {
+        // each方法遍历自定义对象
+        var obj = {name: "Java", age: 15, begin: "xxx",
+            fun: function () {
+                alert("function");
+            }};
+
+        $.each(obj, function (k, v) {
+            alert(k+ "--" + v);
+
+
+        })
+    }
+</script>
+</html>
