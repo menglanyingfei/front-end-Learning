@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery简单动画效果</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h2>添加节点</h2>
+    <ul id="lang">
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C</li>
+        <li>Python</li>
+    </ul>
+    <ul id="framework">
+        <li>Spring</li>
+        <li>Mybatis</li>
+        <li>JUnit</li>
+        <li>Log4j</li>
+    </ul>
+    <button>添加</button>
+</body>
+<script type="text/javascript">
+    $("button").bind("click", function () {
+        // 父子节点关系的操作
+//        $("#lang").append("<li>C++</li>");
+        // 在前面添加
+//        $("#lang").prepend("<li>Go</li>");
+        // 添加已有的节点, 相当于物理位置移动
+//        $("#lang").append($("#framework li:eq(2)"));
+
+        // 被动添加
+//        $("<li>JUnit</li>").appendTo($("#lang"));
+        $("#framework li:eq(2)").appendTo($("#lang"));
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

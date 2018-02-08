@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery事件绑定</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 150px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div>使用bind方法绑定事件</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        // $().bind(json对象) {key: value, key:value}
+        $("div").bind({
+            mouseover: function () {
+                $(this).css("background-color", "lightgreen");
+            },
+            mouseout: function () {
+                $(this).css("background-color", "pink");
+            },
+            click: function () {
+                $(this).css("color", "white");
+            }
+        });
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

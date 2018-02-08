@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery取消事件绑定</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 150px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div>使用bind方法绑定事件</div>
+    <button>取消绑定</button>
+</body>
+<script type="text/javascript">
+    function fa() {
+        alert("aaa");
+    }
+    function fb() {
+        alert("bbb");
+    }
+    function fc() {
+        alert("ccc");
+    }
+
+    $(function () {
+        // $().bind(json对象) {key: value, key:value}
+        $("div").bind({
+            mouseover: function () {
+                $(this).css("background-color", "lightgreen");
+            },
+            mouseout: function () {
+                $(this).css("background-color", "pink");
+            },
+            click: function () {
+                $(this).css("color", "white");
+            }
+        });
+        
+        $("div").bind("click", fa);
+        $("div").bind("click", fb);
+        $("div").bind("click", fc);
+
+
+    });
+    //给button绑定点击事件
+    $("button").click(function () {
+            // 取消绑定所有事件
+            //$("div").unbind();
+            // 取消div的点击事件
+//            $("div").unbind("click");
+        // 取消某个事件, 取消处理程序为fc函数的单击事件
+            $("div").unbind("click", fc);
+
+        }
+    );
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

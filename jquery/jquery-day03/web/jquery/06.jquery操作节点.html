@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery操作节点</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h2>添加节点</h2>
+    <ul id="lang">
+        <li>Java</li>
+        <li>PHP</li>
+        <li id="c">C</li>
+        <li>Python</li>
+    </ul>
+    <ul id="framework">
+        <li>Spring</li>
+        <li>Mybatis</li>
+        <li>JUnit</li>
+        <li id="4j">Log4j</li>
+    </ul>
+    <button>添加</button>
+</body>
+<script type="text/javascript">
+    $("button").bind("click", function () {
+        // 主动 被动
+//        $("#c").after("<li>Go</li>");
+//        $("<li>Go</li>").insertAfter($("#c"));
+
+        $("#4j").insertBefore($("#c"));
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

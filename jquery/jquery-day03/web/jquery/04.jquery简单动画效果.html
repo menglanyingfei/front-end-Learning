@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery简单动画效果</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 150px;
+            border: solid;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div>简单动画效果</div>
+    <button id="btn1">显示</button>
+    <button id="btn2">隐藏</button>
+    <button id="btn3">切换</button>
+</body>
+<script type="text/javascript">
+    function fa() {
+        alert("aaa");
+    }
+    function fb() {
+        alert("bbb");
+    }
+    function fc() {
+        alert("ccc");
+    }
+
+    $("#btn1").click(function () {
+            $("div").show(1000, function () {
+                alert("我回来了");
+            });
+        }
+    );
+
+    $("#btn2").click(function () {
+        // speed: 毫秒值
+            $("div").hide(1000, function () {
+                alert("我消失了");
+            });
+        }
+    );
+
+    function aa() {
+        $("div").toggle(1000, function () {
+
+        });
+    }
+
+    $("#btn3").click(aa);
+
+    // 定时器执行
+//    window.setInterval(aa, 1000);
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

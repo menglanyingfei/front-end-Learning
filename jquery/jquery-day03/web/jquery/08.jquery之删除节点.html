@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery操作节点</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h2>添加节点</h2>
+    <ul id="lang">
+        <li>Java</li>
+        <li>PHP</li>
+        <li id="c">C</li>
+        <li>Python</li>
+    </ul>
+    <ul id="framework">
+        <li>Spring</li>
+        <li>Mybatis</li>
+        <li>JUnit</li>
+        <li id="4j">Log4j</li>
+    </ul>
+    <button>删除</button>
+</body>
+<script type="text/javascript">
+    $("button").bind("click", function () {
+        // 删除某个节点下所有的子节点
+//        $("#framework").empty();
+
+        // 删除某些节点, 相当于被动删除 js removeChild()
+        $("#c,#framework li:eq(1)").remove();
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

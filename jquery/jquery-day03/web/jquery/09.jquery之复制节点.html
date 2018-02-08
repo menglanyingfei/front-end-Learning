@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery操作节点</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h2>添加节点</h2>
+    <ul id="lang">
+        <li id="Java">Java</li>
+        <li>PHP</li>
+        <li id="c">C</li>
+        <li>Python</li>
+    </ul>
+    <ul id="framework">
+        <li>Spring</li>
+        <li>Mybatis</li>
+        <li>JUnit</li>
+        <li id="4j">Log4j</li>
+    </ul>
+    <button>添加</button>
+</body>
+<script type="text/javascript">
+    $(function () {
+        // 给lang下的所有li绑定一个事件
+        $("#lang li").mouseover(function () {
+//            $("#lang li").css("background-color", "yellow");
+           $(this).css("background-color", "yellow");
+        });
+        $("#lang li").mouseout(function () {
+            $(this).css("background-color", "");
+        });
+    });
+
+    $("button").bind("click", function () {
+        // 复制一个Java, 不会复制事件
+//        var $Java = $("#Java").clone();
+        var $Java = $("#Java").clone(true);
+        $("#framework").append($Java);
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

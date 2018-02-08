@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery事件绑定</title>
+    <script type="text/javascript"
+            src="../js/jquery-1.4.4.js"></script>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 150px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div>使用bind方法绑定事件</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("div").mouseout(function () {
+            $(this).css("background-color", "");
+        });
+        // bind("事件类型", 处理程序)
+        $("div").bind("mouseover", function () {
+            $(this).css("background-color", "lightgreen");
+        });
+
+        // bind("事件类型1 事件类型2 ...", 处理程序) 使用不多, 事件类型之间只能是一个空格
+        $("div").bind("mouseover mouseout click", function () {
+            alert("Hello World");
+        });
+    })
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
