@@ -13,3 +13,6 @@ http://blog.csdn.net/menglanyingfei/article/category/6489588
 
 jquery:<br>
 http://blog.csdn.net/menglanyingfei/article/category/7449810
+
+ajax&json:<br>
+http://blog.csdn.net/menglanyingfei/article/category/7451132
