@@ -12,4 +12,4 @@ JavaScript中常见的HTML DOM操作
 http://blog.csdn.net/menglanyingfei/article/category/6489588
 
 jquery:<br>
-http://blog.csdn.net/menglanyingfei/article/category/7449791
+http://blog.csdn.net/menglanyingfei/article/category/7449810
